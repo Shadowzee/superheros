@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 
 import { DialpadComponent } from './dialpad/dialpad.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-  
+  ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [],

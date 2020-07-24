@@ -1,4 +1,81 @@
 
+<div class="container-fluid bg">
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+       <h4>SUPERHERO CALLER</h4>
+        <br />
+    </div>
+    <div class="col-md-4"></div>
+</div>
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <input class="inputbox"  placeholder="Enter" [formControl]="dialpadinput" />
+        <br />
+    </div>
+    <div class="col-md-4"></div>
+</div>
 
 
-<button (click)="submit()">submit</button>
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <button class="dialpadbutton" (click)="add(1)">1<br />@.?</button>
+        <button class="dialpadbutton" (click)="add(2)">2<br />ABC</button>
+        <button class="dialpadbutton" (click)="add(3)">3<br />DEF</button>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <button class="dialpadbutton" (click)="add(4)">4<br />GHI</button>
+        <button class="dialpadbutton" (click)="add(5)">5<br />JKL</button>
+        <button class="dialpadbutton" (click)="add(6)">6<br />MNO</button>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <button class="dialpadbutton" (click)="add(7)">7<br />PQRS</button>
+        <button class="dialpadbutton" (click)="add(8)">8<br />TUV</button>
+        <button class="dialpadbutton" (click)="add(9)">9<br />WXYZ</button>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <button class="dialpadbutton" (click)="submit()">*<br />send</button>
+        <button class="dialpadbutton" (click)="add(0)">0<br />Zero</button>
+        <button class="dialpadbutton" (click)="add('#')">#<br />space</button>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+
+        <button (click)="clear()">Clear</button>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+
+<!-- <button (click)="submit()">submit</button> -->
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+<br />
+<br />
+        <div *ngIf="outputhero">
+            {{outputhero}}
+        </div>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+</div>
